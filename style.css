@@ -1,6 +1,26 @@
-body {
-    background-color: #000000;
+html, body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-h1 {
-    color: #ffffff;
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar__logo {
+    width: 279px;
+}
+
+.topbar__nav li {
+    list-style: none;
+    display: inline-block;
+}
+
+.container {
+    width: 1420px;
+    max-width: 100%;
+    margin: 0 auto;
 }
