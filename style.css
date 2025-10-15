@@ -47,26 +47,14 @@ html, body {
     color: #000000;
 }
 
-    .topbar__link--text:hover {
-        text-decoration: underline;
-    }
+.topbar__link--text:hover {
+    text-decoration: underline;
+}
 
-    .topbar__link--button {
-        color: #ffffff;
-        background-color: #ff8233;
-        border-radius: 5px;
-    }
-
-    .topbar__link--button:hover {
-        background-color: #ffffff;
-        color: #ff8233;
-        transition-timing-function: ease-out;
-        transition-duration: .3s;
-        transition-property: background-color, color;
-    }
-
-.introduction__text {
-    color: #000000;
+.topbar__link--button {
+    color: #ffffff;
+    background-color: #ff8233;
+    border-radius: 5px;
 }
 
 .introduction {
@@ -77,13 +65,21 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}   
+}
+
+.introduction__textbox {
+    padding-left: 7px;
+}
+
+.introduction__text {
+    color: #000000;
+}
 
 .introduction__text--small {
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
-    margin-left: 7px;
+    margin: 0;
 }
 
 .introduction__text--medium {
@@ -91,13 +87,7 @@ html, body {
    font-weight: 600;
    font-size: 32px;
    line-height: 100%;
-   margin-left: 4px;
-}
-
-.introduction__text--smallest {
-   margin-left: 7px;
-   margin-top: -50px;
-   font-size: 21px;
+   margin: 16px 0 0;
 }
 
 .introduction__textlarge {
@@ -107,28 +97,47 @@ html, body {
 }
 
 .introduction__textlarge--first {
-    margin-top: -25px;
+    margin: 0;
 }
 .introduction__textlarge--second {
-    margin-left: 210px;
-    margin-top: -100px;
+    text-align: right;
+    margin: 0;
 }
 
-.introduction__portrait {
-    width: 538px;
-    margin-left: 160px;
+.introduction__text--smallest {
+   margin: 28px 0 22px;
+   font-size: 21px;
 }
 
 .introduction__description {
-    width: calc(100% - 538px - 157px);
+    width: calc(100% - 487px - 219px);
 }
 
-
 .introduction__logo {
-    justify-self: baseline;
-    margin-top: 775px;
-    margin-left: 25.03px;
+    /* display: inline-block; */
+    /* justify-self: baseline; */
     width: 32.48px;
+}
+
+.introduction__presentation {
+    width: 487px;
+    margin-left: 160px;
+}
+
+.introduction__portrait {
+    width: 100%;
+}
+
+.introduction__logos {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction__logos li {
+    list-style: none;
+    margin-left: 15px;
 }
 
 .about {
@@ -159,7 +168,7 @@ html, body {
     font-weight: 600;
 }
 
-.button {
+.introduction__button {
     color: #ffffff;
     background-color: #ff8233;
     border-radius: 5px;
@@ -174,4 +183,101 @@ html, body {
     padding: 17.5px 52.5px;
     letter-spacing: 0.5px;  
     border-width: 0;
+    cursor: pointer;
 }
+
+.progressbar {
+    background-color: #EDECEC;
+    border-radius: 6px;
+    width: 100%;
+    height: 12px;
+    position: relative;
+}
+
+.progressbar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #ff8233;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.progressbar > div {
+    background-color: #EDECEC;
+    width: 32px;
+    height: 32px;
+    border: 3px solid #ff8233;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progressbar--60::before {
+    width: 60%;
+}
+
+.progressbar--60 > div {
+    left: 60%;
+}
+
+/* width: calc(33.3333% - 15px); */
+.progressbar--80::before {
+    width: 80%;
+}
+
+.progressbar--80 > div {
+    left: 80%;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #ff8233;
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+    transition-property: background-color, color;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1249.98px) {
+    .introduction__description {
+        width: calc(100% - 487px - 25px);
+    }
+    .introduction__presentation {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024.98px) {
+    .introduction__description {
+        width: calc(100% - 280px - 25px);
+    }
+    .introduction__presentation {
+        margin-left: 0;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .introduction {
+        flex-direction: column;
+    }
+    .introduction__description {
+        width: 100%;
+    }
+    .introduction__presentation {
+        margin: 20px 0 0;
+        width: 50%;
+        min-width: 280px;
+    }
+    .introduction__textlarge--first {
+        font-size: 63px;
+    }
+    .introduction__textlarge--second {
+        font-size: 63px;
+    }
+}
+
