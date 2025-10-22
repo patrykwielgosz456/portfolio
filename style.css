@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -24,3 +28,336 @@ html, body {
     max-width: 100%;
     margin: 0 auto;
 }
+
+
+.topbar__link {
+    text-decoration: none;  
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 32px;
+    padding: 10px 14px;
+    letter-spacing: 0.5px;
+}
+
+.topbar__link--text {
+    color: #000000;
+}
+
+.topbar__link--text:hover {
+    text-decoration: underline;
+}
+
+.topbar__link--button {
+    color: #ffffff;
+    background-color: #ff8233;
+    border-radius: 5px;
+}
+
+.introduction {
+    width: 1420px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.introduction__textbox {
+    padding-left: 7px;
+}
+
+.introduction__text {
+    color: #000000;
+}
+
+.introduction__text--small {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    margin: 0;
+}
+
+.introduction__text--medium {
+   color: #ff8233;
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 100%;
+   margin: 16px 0 0;
+}
+
+.introduction__textlarge {
+   font-weight: bold;
+   font-size: 100px;
+   line-height: 100%;
+}
+
+.introduction__textlarge--first {
+    margin: 0;
+}
+.introduction__textlarge--second {
+    text-align: right;
+    margin: 0;
+}
+
+.introduction__text--smallest {
+   margin: 28px 0 22px;
+   font-size: 21px;
+}
+
+.introduction__description {
+    width: calc(100% - 487px - 219px);
+}
+
+.introduction__logo {
+    /* display: inline-block; */
+    /* justify-self: baseline; */
+    width: 32.48px;
+}
+
+.introduction__presentation {
+    width: 487px;
+    margin-left: 160px;
+}
+
+.introduction__portrait {
+    width: 100%;
+}
+
+.introduction__logos {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction__logos li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.about {
+    width: 1470px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__portrait {
+    width: 681px;
+}
+
+.about__text--small {
+    font-size: 21px;
+}
+
+.about__text--big {
+    font-size: 65px;
+    font-weight: 600;
+}
+
+.about__text--bold {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.introduction__button {
+    color: #ffffff;
+    background-color: #ff8233;
+    border-radius: 5px;
+    text-decoration: none;  
+    margin-left: 6px;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    line-height: 100%;
+    padding: 17.5px 52.5px;
+    letter-spacing: 0.5px;  
+    border-width: 0;
+    cursor: pointer;
+}
+
+.progressbar {
+    background-color: #EDECEC;
+    border-radius: 6px;
+    width: 100%;
+    height: 12px;
+    position: relative;
+}
+
+.progressbar::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #ff8233;
+    border-radius: 6px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.progressbar > div {
+    background-color: #EDECEC;
+    width: 32px;
+    height: 32px;
+    border: 3px solid #ff8233;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progressbar--60::before {
+    width: 60%;
+}
+
+.progressbar--60 > div {
+    left: 60%;
+}
+
+/* width: calc(33.3333% - 15px); */
+.progressbar--80::before {
+    width: 80%;
+}
+
+.progressbar--80 > div {
+    left: 80%;
+}
+
+.progressbar--50::before {
+    width: 50%;
+}
+
+.progressbar--50 > div {
+    left: 50%;
+}
+
+.progressbar--90::before {
+    width: 90%;
+}
+
+.progressbar--90 > div {
+    left: 90%;
+}
+
+.services {
+    width: 1420px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__textbox { 
+    width: 932px;
+    height: 214px;
+    position: relative;
+    left: 239px;
+}
+
+.services__maintext { 
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.services__sidetext { 
+    font-size: 21px;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.services__link {
+    background-color: #F8F8F8;
+    width: 330px;
+    height: 346px;
+    border-radius: 14px;
+}
+
+.services__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__links > a {
+    text-decoration: none; 
+}
+
+.services__link > img {
+    height: 70px;
+}
+
+.services__boldtext {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 15px 0 15px 0; 
+    color: #000000;
+}
+
+.services__regulartext {
+    font-size: 19px;
+    margin: 15px 0 0 0; 
+    color: #000000;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    color: #ff8233;
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+    transition-property: background-color, color;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1249.98px) {
+    .introduction__description {
+        width: calc(100% - 487px - 25px);
+    }
+    .introduction__presentation {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024.98px) {
+    .introduction__description {
+        width: calc(100% - 280px - 25px);
+    }
+    .introduction__presentation {
+        margin-left: 0;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .introduction {
+        flex-direction: column;
+    }
+    .introduction__description {
+        width: 100%;
+    }
+    .introduction__presentation {
+        margin: 20px 0 0;
+        width: 50%;
+        min-width: 280px;
+    }
+    .introduction__textlarge--first {
+        font-size: 63px;
+    }
+    .introduction__textlarge--second {
+        font-size: 63px;
+    }
+}
+

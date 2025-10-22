@@ -12,47 +12,112 @@
 <body>
     <div class="container">
         <header class="topbar">
-            <img src="logo.png" class="topbar__logo" alt="Napis Fawziuiux z portretem młodego człowieka na okrągłym niebieskim tle" />
+            <img src="./assets/logo.png" class="topbar__logo" alt="Napis Fawziuiux z portretem młodego człowieka na okrągłym niebieskim tle" />
             <nav class="topbar__nav">
                 <ul>
-                    <li><a href="/home/">Home</a></li>
-                    <li><a href="/about/">About</a></li>
-                    <li><a href="/services/">Services</a></li>
-                    <li><a href="/projects/">Projects</a></li>
-                    <li><a href="/testimonials/">Testimonials</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li><a href="/download/">Download CV</a></li>
+                    <li><a class="topbar__link topbar__link--text" href="/home/">Home</a></li>
+                    <li><a class="topbar__link topbar__link--text" href="/about/">About</a></li>
+                    <li><a class="topbar__link topbar__link--text" href="/services/">Services</a></li>
+                    <li><a class="topbar__link topbar__link--text" href="/projects/">Projects</a></li>
+                    <li><a class="topbar__link topbar__link--text" href="/testimonials/">Testimonials</a></li>
+                    <li><a class="topbar__link topbar__link--text" href="/contact/">Contact</a></li>
+                    <li><a class="topbar__link topbar__link--button button" href="/download/">Download CV</a></li>
                 </ul>
             </nav>
         </header>
     </div>
     <main>
-        <div id="introduction" class="introduction">
-
-        </div>
-         <div id="about">
+        <section class="introduction">
+            <div class="introduction__description">
+                <div class="introduction__textbox">
+                    <p class="introduction__text introduction__text--small">Hi I am</p>
+                    <p class="introduction__text introduction__text--medium">Fawzi Sayed</p>
+                    <p class="introduction__textlarge introduction__textlarge--first">UI & UX</p>
+                    <p class="introduction__textlarge introduction__textlarge--second">Designer</p>
+                    <p class="introduction__text introduction__text--smallest">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+                </div>
+                <button class="button introduction__button">Hire Me</button>
+            </div> 
+            <div class="introduction__presentation">
+                <img class="introduction__portrait" src="./assets/image.png" alt="">
+                <ul class="introduction__logos">
+                    <li><a href=""><img class="introduction__logo introduction__logo--facebook" src="./assets/facebook.png" alt=""></a></li>
+                    <li><a href=""><img class="introduction__logo introduction__logo--twitter" src="./assets/twitter.png" alt=""></a></li>
+                    <li><a href=""><img class="introduction__logo introduction__logo--instagram" src="./assets/instagram.png" alt=""></a></li>
+                    <li><a href=""><img class="introduction__logo introduction__logo--linkedin" src="./assets/linkedin.png" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="about">
+            <img class="about__portrait" src="./assets/image2.png" alt="">
+             <div class="about__textbox">
+                   <p class="about__text about__text--big">About Me</p>
+                   <p class="about__text about__text--small">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Turpis tempus pharetra</p>
+                   <p class="about__text about__text--bold">
+                        UX
+                        <div class="progressbar progressbar--80"><div></div></div>
+                    </p>
+                   <p class="about__text about__text--bold">
+                        Website Design
+                        <div class="progressbar progressbar--60"><div></div></div>
+                    </p>
+                   <p class="about__text about__text--bold">
+                        App Design
+                        <div class="progressbar progressbar--50"><div></div></div>
+                    </p>
+                   <p class="about__text about__text--bold">
+                        Graphic Design
+                        <div class="progressbar progressbar--90"><div></div></div>
+                    </p>
+               </div>
+        </section>
+         <section class="services">
+            <div class="services__main">
+            <div class="services__textbox">
+                <p class="services__maintext">Services</p>
+                <p class="services__sidetext">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium</p>
+           </div>
+                <div class="services__links">
+                    <a href=""><div class="services__link">
+                        <img src="./assets/uiux.png" alt="">
+                        <p class="services__boldtext">UI/UX</p>
+                        <p class="services__regulartext">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div></a>
+                    <a href=""><div class="services__link">
+                        <img src="./assets/web.png" alt="">
+                        <p class="services__boldtext">Web Design</p>
+                        <p class="services__regulartext">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div></a>
+                    <a href=""><div class="services__link">
+                        <img src="./assets/app.png" alt="">
+                        <p class="services__boldtext">App Design</p>
+                        <p class="services__regulartext">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div></a>
+                    <a href=""><div class="services__link">
+                        <img src="./assets/graphic.png" alt="">
+                        <p class="services__boldtext">Graphic Design</p>
+                        <p class="services__regulartext">Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+                    </div></a>
+                </div>
+            </div>
+        </section>
+         <section class="projects">
             
-        </div>
-         <div id="services">
+        </section>
+         <section class="testimonials">
             
-        </div>
-         <div id="projects">
+        </section>  
+         <section class="designtogether">
             
-        </div>
-         <div id="testimonials">
-            
-        </div>  
-         <div id="designtogether">
-            
-        </div>
+        </section>
         <article>
         </article>
     </main>
     <footer>
-        <div id="higherfooter">
+        <div class="higherfooter">
 
         </div>
-        <div id="lowerfooter">
+        <div class="lowerfooter">
 
         </div>
 
