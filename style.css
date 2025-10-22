@@ -234,6 +234,86 @@ html, body {
     left: 80%;
 }
 
+.progressbar--50::before {
+    width: 50%;
+}
+
+.progressbar--50 > div {
+    left: 50%;
+}
+
+.progressbar--90::before {
+    width: 90%;
+}
+
+.progressbar--90 > div {
+    left: 90%;
+}
+
+.services {
+    width: 1420px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__textbox { 
+    width: 932px;
+    height: 214px;
+    position: relative;
+    left: 239px;
+}
+
+.services__maintext { 
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.services__sidetext { 
+    font-size: 21px;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.services__link {
+    background-color: #F8F8F8;
+    width: 330px;
+    height: 346px;
+    border-radius: 14px;
+}
+
+.services__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__links > a {
+    text-decoration: none; 
+}
+
+.services__link > img {
+    height: 70px;
+}
+
+.services__boldtext {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 15px 0 15px 0; 
+    color: #000000;
+}
+
+.services__regulartext {
+    font-size: 19px;
+    margin: 15px 0 0 0; 
+    color: #000000;
+}
+
 .button:hover {
     background-color: #ffffff;
     color: #ff8233;
