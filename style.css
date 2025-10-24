@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+#figmaTemplate {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    opacity: .5;
+}
+
 html, body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -312,6 +322,82 @@ html, body {
     font-size: 19px;
     margin: 15px 0 0 0; 
     color: #000000;
+}
+
+.projects {
+    width: 1420px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects__textbox { 
+    width: 932px;
+    height: 214px;
+    position: relative;
+    left: 239px;
+}
+
+.projects__maintext { 
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.projects__sidetext { 
+    font-size: 21px;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.designtogether {
+    width: 932px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.designtogether__main {
+    position: relative;
+}
+
+.designtogether__maintext { 
+    font-weight: 600;
+    font-size: 65px;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+
+.designtogether__sidetext { 
+    font-size: 21px;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.designtogether__eemail {
+    width: 627px;
+    height: 75px;
+    border-radius: 14px;
+    border: 1px #AFAFAF solid;
+    background-color: #F8F8F8;
+    margin: 48px 0 0 0;
+}
+
+.designtogether__contactbutton {
+    font-weight: 600;
+    font-size: 24px;
+    color: #FFFFFF;
+    width: 222px;
+    height: 75px;
+    background-color: #FD6F00;
+    border-radius: 14px;
 }
 
 .button:hover {
