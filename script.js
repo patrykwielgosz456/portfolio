@@ -29,7 +29,23 @@ function incrementButtonClick(buttonType) {
     })
 
     document.addEventListener("DOMContentLoaded", () => {
-       document.getElementById("figmaTemplate").style = "display: block;";
+        window.addEventListener("keydown", (event) => {
+            if (event.key === "q") {
+                document.getElementById("figmaTemplate").style = "display: block;";
+            } else if (event.key === "f") {
+                document.getElementById("figmaTemplate").style = "display: none;";
+            } else if (event.key === "j") {
+                const currentOpacity = Number(window.getComputedStyle(document.getElementById("figmaTemplate")).opacity);
+                if (currentOpacity >= 0.1) {
+                    document.getElementById("figmaTemplate").style.opacity = currentOpacity - 0.1;
+                }
+            } else if (event.key === "m") {
+                const currentOpacity = Number(window.getComputedStyle(document.getElementById("figmaTemplate")).opacity);
+                if (currentOpacity <= 0.9) {
+                    document.getElementById("figmaTemplate").style.opacity = currentOpacity + 0.1;
+                }
+            }
+        })
     })
 
     // sprawdzić czy obraz zmienia style. 
